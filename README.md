@@ -14,7 +14,7 @@ If you want to create a new feature, please follow the steps below:
    git checkout -B feat/nama-kalian
    ```
 
-3. html baru
+3. html ba
 
 4. Add Changes:
 

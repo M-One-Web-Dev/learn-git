@@ -1,0 +1,77 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--background-color);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: var(--primary-color);
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header .logo:hover {
+    color: var(--accent-color);
+    transform: scale(1.05); /* Efek zoom pas hover */
+}
+
+header .navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+header .navbar a {
+    font-size: 1rem;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+header .navbar a:hover {
+    background: var(--accent-color);
+    color: var(--background-color);
+    transform: translateY(-3px); /* Efek angkat pas hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan hover */
+}
+
+header .icons {
+    display: flex;
+    gap: 1rem;
+}
+
+header .icons a {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header .icons a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1); /* Efek zoom   hover */
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: none;
+}
